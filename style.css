@@ -189,7 +189,7 @@ ul {
     padding-bottom: 1rem;
     border: 1px solid lightgray;
     border-radius: 9999px;
-    border-width: 1px;
+    border-width: 2px;
     width: 100%;
     font-weight: 500;
     font-size: 100%;
@@ -201,9 +201,18 @@ ul {
     transition: all 300ms ease;
 }
 
-.input_email:active {
-    border: 2px solid #6415ff;
-    transition: all 300ms ease;
+.input_email:focus {
+    border: 1px solid rgba(160,174,192,var(--tw-border-opacity));
+    box-shadow: 0 0 3px rgba(160,174,192,var(--tw-border-opacity));
+    outline-offset: 0px;
+    outline: none;
+}
+
+.input_email:focus:not(:hover) {
+    border: 1px solid #6415FF;
+    box-shadow: 0 0 3px #6415FF;
+    outline-offset: 0px;
+    outline: none;
 }
 
 .input_btn {
@@ -829,6 +838,7 @@ ul {
 .right__arrow--img {
     height: 16px;
     width: 16px;
+    color: #6415ff;
 }
 
 .divider {
