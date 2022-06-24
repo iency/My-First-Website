@@ -91,6 +91,7 @@ ul {
 .nav_link {
     margin: 0 24px;
     color: #243e63;
+    transition: all 500ms ease;
 }
 
 .nav_link:hover:not(:last-child) {
@@ -99,6 +100,7 @@ ul {
     transition: all ease;
     tab-size: 4;
     text-underline-offset: 6px;
+    transition: all 300ms ease;
 }
 
 .nav_link-login {
@@ -132,6 +134,11 @@ ul {
     display: flex;
     align-items: center;
     color: #243e63;
+}
+
+.nav_logo-link:hover {
+    color: #6415ff;
+    transition: color 300ms ease;
 }
 
 /* LANDING */
@@ -711,6 +718,12 @@ ul {
 .buy_middle {
     background-color: white;
     color: #6415FF;
+    border-radius: 9999px;
+    border: none;
+    padding: 12px 32px;
+    margin: 0;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .buy_bottom {
@@ -724,6 +737,18 @@ ul {
     width: 100%;
     font-size: 0.875rem;
     font-weight: 700;
+    transition: all 300ms ease;
+}
+
+.pricing_buy:hover {
+    transform: translateY(-4%);
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 15%);
+    filter: brightness(90%);
+}
+
+.buy_middle:hover {
+    filter: brightness(90%);
+    transition: all 300ms ease;
 }
 
 .choice_top-middle, 
@@ -831,24 +856,30 @@ ul {
     margin-right: 12px;
     padding: 16px;
     border-radius: 9999px;
-    background-color: #d6e3f7;
+    --tw-bg-opacity: 1;
+    background-color: rgba(237,242,247,var(--tw-bg-opacity));
+    color: #6415ff;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 40px;
+    width: 70px;
+    transition: all 500ms ease;
 }
 
-.left__arrow--img,
-.right__arrow--img {
-    height: 16px;
-    width: 16px;
-    color: #6415ff;
+.left__arrow--button:hover, 
+.right__arrow--button:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(229,234,239,var(--tw-bg-opacity));
+    transition: all 300ms ease;
 }
 
 .divider {
     margin-top: 12px;
     margin-bottom: 12px;
-    border-right: 1px solid #7C8BA1;
+    border: 0 solid #e5e7eb;
+    border-right-width: 1px;
 }
 
 
