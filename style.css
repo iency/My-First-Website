@@ -883,7 +883,27 @@ ul {
 }
 
 
+/* FAQS */
 
+.faqs_lists {
+    margin-top: 3rem;
+    max-width: 56rem;
+    position: relative;
+}
+
+.faqs_list {
+    transition-property: color, fill, stroke;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 1.25rem;
+    padding: 1.25rem 2rem;
+    border-radius: 0.5rem;
+    --tw-text-opacity: 1;
+    color: rgba(45,55,72,var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgba(237,242,247,var(--tw-bg-opacity));
+    transition-duration: 300ms;
+}
 
 
 @media (min-width: 1024px) {
