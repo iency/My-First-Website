@@ -1200,6 +1200,14 @@ ul {
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
+    h2,h1 {
+        font-size: 36px;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
     .header_container-row {
         display: flex;
         flex-direction: column;
@@ -1348,6 +1356,7 @@ ul {
 
     .prefooter_text {
         margin-bottom: 40px;
+        font-size: 26px;
     }
 
     .footer_top {
