@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -1200,10 +1201,6 @@ ul {
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
-    h2,h1 {
-        font-size: 36px;
-    }
-
     .nav_links {
         display: none;
     }
@@ -1387,6 +1384,7 @@ ul {
 }
 
 /* SMALL PHONES, LARGE SMARTPHONES */
+
 @media (max-width: 500px) {
     .purple_box {
         width: 40%;
@@ -1399,6 +1397,10 @@ ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .input_email {
+        width: 80%;
     }
 
     .input_btn {
