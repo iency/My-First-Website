@@ -151,6 +151,7 @@ ul {
     border: none;
     display: flex;
     align-items: center;
+    display: none;
 }
 
 .menu_backdrop {
@@ -172,11 +173,14 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
+    transition: all 300ms ease;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .menu-open .menu_backdrop {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
 }
 
 .menu_backdrop-list {
@@ -200,8 +204,18 @@ ul {
 }
 
 .menu_link {
-    color: inherit;
-    text-decoration: inherit;
+    color: #243e63;
+    text-decoration: 2px underline transparent;
+    transition: all 300ms ease;
+    text-underline-offset: 6px;
+}
+
+.menu_link:hover {
+    text-decoration: 2px underline;
+    color: #6415ff;
+    transition: all 300ms ease;
+    tab-size: 4;
+    text-underline-offset: 6px;
 }
 
 .menu_list-login {
@@ -521,7 +535,6 @@ ul {
 }
 
 .steps_right {
-    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -685,6 +698,10 @@ ul {
 }
 
 /* PRICING */
+
+.pricing_container {
+    padding: 80px 0;
+}
 
 .pricing_choices {
     display: flex;
@@ -963,7 +980,7 @@ ul {
 /* FAQS */
 
 .faqs_container {
-    padding: 96px 0;
+    padding: 80px 0;
 }
 
 .faqs_lists {
@@ -1029,7 +1046,7 @@ ul {
 /* PREFOOTER */
 
 #prefooter {
-    padding: 96px 0;
+    padding: 80px 0;
 }
 
 .prefooter_setup-wrapper {
@@ -1104,7 +1121,7 @@ ul {
 /* FOOTER */
 
 #footer {
-    padding: 96px 0 0 0;
+    padding: 80px 0 0 0;
 }
 
 .footer_container {
@@ -1249,8 +1266,6 @@ ul {
         flex-direction: row;
         -webkit-box-align: stretch;
         align-items: stretch;
-        padding-top: 6rem;
-        padding-bottom: 6rem;
     }
 }
 
@@ -1558,5 +1573,15 @@ ul {
 
     .footer_section {
         width: 40%;
+    }
+}
+
+@media (max-width: 890px) {
+    .nav_link {
+        display: none;
+    }
+
+    .btn_menu {
+        display: block;
     }
 }
