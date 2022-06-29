@@ -12,72 +12,74 @@
 <body>
     <div class="container">
     <section id="landing">
-        <div class="row">
-            <nav class="nav_container">
-                    <a href="/" class="nav_logo-link"><img src="./assets/logo.svg" class="nav_link-img" alt="logo">Treact</a>
-                <div class="nav_links">
-                    <a href="#" class="nav_link">About</a>
-                    <a href="#" class="nav_link">Blog</a>
-                    <a href="#" class="nav_link">Pricing</a>
-                    <a href="#" class="nav_link">Contact Us</a>
-                    <a href="#" class="nav_link nav_link-login">Login</a>
-                    <a href="#" class="nav_link nav_link-btn">Sign Up</a>
+        <div class="landing fade-left-top">
+            <div class="row">
+                <nav class="nav_container">
+                        <a href="/" class="nav_logo-link"><img src="./assets/logo.svg" class="nav_link-img" alt="logo">Treact</a>
+                    <div class="nav_links">
+                        <a href="/" class="nav_link">About</a>
+                        <a href="/" class="nav_link">Blog</a>
+                        <a href="#pricing" class="nav_link">Pricing</a>
+                        <a href="#prefooter" class="nav_link">Contact Us</a>
+                        <a href="#" class="nav_link nav_link-login">Login</a>
+                        <a href="#" class="nav_link nav_link-btn">Sign Up</a>
+                    </div>
+                        <button class="btn_menu" onclick="openMenu()">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    <div class="menu_backdrop">
+                        <button class="btn_menu btn_menu-close" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu_backdrop-list">
+                            <li class="menu_list">
+                                <a href="#features" class="menu_link" onclick="closeMenu()">About</a>
+                            </li>
+                            <li class="menu_list">
+                                <a href="#" class="menu_link" onclick="closeMenu()">Blog</a>
+                            </li>
+                            <li class="menu_list">
+                                <a href="#pricing" class="menu_link" onclick="closeMenu()">Pricing</a>
+                            </li>
+                            <li class="menu_list">
+                                <a href="#prefooter" class="menu_link" onclick="closeMenu()">Contact Us</a>
+                            </li>
+                            <li class="menu_list menu_list-login">
+                                <a href="#" class="menu_link" onclick="closeMenu()">Login</a>
+                            </li>
+                            <li class="menu_list">
+                                <a href="#" class="purple_box" onclick="closeMenu()">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>        
+                <div class="header_container">
+                    <div class="header_container-row">
+                        <div class="header_description-left">
+                        <h1 class="h1 header_description-h1">
+                            Beautiful React Templates <span class="purple">for you.</span></h1>
+                        <p class="header_description-para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+                        <div class="header_description-input">
+                            <input type="email" placeholder="Your E-mail Address" class="input_email"> 
+                            <button class="input_btn">Get Started</button>
+                        </div>
+                        <div class="header_description-customers">
+                            <p class="customers_text">OUR TRUSTED CUSTOMERS</p>
+                            <img src="./assets/customers-logo-strip.png" class="customers_logo" alt="">
+                        </div>
+                        </div>
+                        <div class="header_description-right">
+                            <img src="./assets/undraw_winter_designer_a-2-m7.svg" class="description_right-img" alt="">
+                        </div>
+                    </div>
                 </div>
-                <button class="btn_menu" onclick="openMenu()">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="menu_backdrop">
-                    <button class="btn_menu btn_menu-close" onclick="closeMenu()">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <ul class="menu_backdrop-list">
-                        <li class="menu_list">
-                            <a href="#features" class="menu_link" onclick="closeMenu()">About</a>
-                         </li>
-                        <li class="menu_list">
-                            <a href="#" class="menu_link" onclick="closeMenu()">Blog</a>
-                         </li>
-                        <li class="menu_list">
-                            <a href="#pricing" class="menu_link" onclick="closeMenu()">Pricing</a>
-                         </li>
-                        <li class="menu_list">
-                            <a href="#prefooter" class="menu_link" onclick="closeMenu()">Contact Us</a>
-                         </li>
-                        <li class="menu_list menu_list-login">
-                            <a href="#" class="menu_link" onclick="closeMenu()">Login</a>
-                         </li>
-                        <li class="menu_list">
-                            <a href="#" class="purple_box" onclick="closeMenu()">Sign Up</a>
-                         </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>        
-            <div class="header_container">
-                <div class="header_container-row">
-                    <div class="header_description-left">
-                    <h1 class="h1 header_description-h1">
-                        Beautiful React Templates <span class="purple">for you.</span></h1>
-                    <p class="header_description-para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-                    <div class="header_description-input">
-                        <input type="email" placeholder="Your E-mail Address" class="input_email"> 
-                        <button class="input_btn">Get Started</button>
-                    </div>
-                    <div class="header_description-customers">
-                        <p class="customers_text">OUR TRUSTED CUSTOMERS</p>
-                        <img src="./assets/customers-logo-strip.png" class="customers_logo" alt="">
-                    </div>
-                    </div>
-                    <div class="header_description-right">
-                        <img src="./assets/undraw_winter_designer_a-2-m7.svg" class="description_right-img" alt="">
-                    </div>
-                </div>
-            </div>
+        </div>
     </section>
 
     <section id="features">
         <div class="row">
-            <div class="features_container">
+            <div class="features_container fade-right-top">
                 <div class="features_title">
                     <h5 class="features_h5"><span class="purple">FEATURES</span></h5>
                     <h2 class="h2 features_h2">
@@ -86,7 +88,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                 </div>
-                <div class="features_list">
+                <div class="features_list reveal fade-right">
                     <div class="service_container">
                         <span class="service_img">
                             <i class="fa-solid fa-bolt"></i>
@@ -148,7 +150,7 @@
 
     <section id="quality">
         <div class="row">
-            <div class="quality_container">
+            <div class="quality_container reveal fade-left">
                 <div class="quality_left">
                     <h5 class="quality_h5"><span class="purple">QUALITY WORK</span></h5>
                     <h2 class="h2 values_h2">
@@ -156,10 +158,12 @@
                     <p class="para quality_para">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <button class="learn_button purple_box">Learn More</button>
+                    <div class="learn_button-wrapper">
+                    <button class="learn_button">Learn More</button>
+                    </div>
                 </div>
                 <div class="quality_right">
-                    <img src="./assets/hero-screenshot.png" class="quality_img" alt="">
+                    <img src="./assets/hero-screenshot.png" class="img-wrap quality_img" alt="">
                 </div>
             </div>
         </div>
@@ -167,9 +171,9 @@
 
     <section id="steps">
         <div class="row">
-            <div class="steps_container">
+            <div class="steps_container reveal fade-right">
                 <div class="steps_left">
-                    <img src="./assets/hero-screenshot-2.png" class="steps_img" alt="">
+                    <img src="./assets/hero-screenshot-2.png" class="img-wrap steps_img" alt="">
                 </div>
                 <div class="steps_right">
                     <h5 class="quality_h5"><span class="purple">STEPS</span></h5>
@@ -206,7 +210,7 @@
 
     <section id="values">
         <div class="row">
-            <div class="values_container">
+            <div class="values_container reveal fade-left">
                 <div class="values_left">
                     <h5 class="values_h5"><span class="purple">VALUES</span></h5>
                     <h2 class="h2 values_h2">
@@ -234,10 +238,12 @@
                             </p>
                         </div>
                     </div>
-                    <button class="learn_button purple_box values_button">Learn More</button>
+                    <div class="learn_button-wrapper">
+                    <button class="learn_button">Learn More</button>
+                    </div>
                 </div>
                 <div class="values_right">
-                    <img src="./assets/prototype-illustration.svg" class="values_img" alt="">
+                    <img src="./assets/prototype-illustration.svg" class="img-wrap values_img" alt="">
                 </div>
             </div>
         </div>
@@ -245,7 +251,7 @@
 
     <section id="pricing">
         <div class="row">
-            <div class="pricing_container">
+            <div class="pricing_container reveal fade-right">
                 <div class="pricing_title">
                     <h5 class="features_h5"><span class="purple">PRICING</span></h5>
                     <h2 class="h2 features_h2">
@@ -313,13 +319,15 @@
 
     <section id="testimonials">
         <div class="row">
-            <div class="testimonials_container">
-                    <img src="./assets/love-illustration.svg" class="testimonials_img" alt="">
+            <div class="testimonials_container reveal fade-left">
+                <div class="testimonials_container-left">
+                <img src="./assets/love-illustration.svg" class="img-wrap testimonials_img" alt="">
+                </div>
                 <div class="testimonials_container-right">
                     <h5 class="values_h5"><span class="purple">TESTIMONIALS</span></h5>
                     <h2 class="h2 values_h2">
                         Our Clients <span class="purple">Love Us.</span></h2>
-                    <p class="para values_para">
+                    <p class="para testimonials_para">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.
                     </p>
                     <div class="test__reviews">
@@ -354,7 +362,7 @@
 
     <section id="faqs">
         <div class="row">
-            <div class="faqs_container">
+            <div class="faqs_container reveal fade-right">
                 <div class="faqs_title">
                     <div class="pricing_title">
                         <h5 class="features_h5"><span class="purple">FAQs</span></h5>
@@ -421,7 +429,7 @@
 
     <section id="prefooter">
         <div class="row">
-            <div class="prefooter_setup-wrapper">
+            <div class="prefooter_setup-wrapper reveal fade-left">
                 <div class="prefooter_setup">
                     <div class="prefooter_text">Developers all over the world are happily using Treact.</div>
                     <div class="prefooter_buttons">
@@ -434,7 +442,7 @@
     </section>
 
     <section id="footer">
-            <div class="footer_container">
+            <div class="footer_container reveal fade-right">
                 <div class="footer_wrapper">
                     <div class="footer_top">
                         <div class="footer_section">
