@@ -1275,6 +1275,11 @@ ul {
     height: 16px;
 }
 
+.facebook_logo {
+    width: 16px;
+    height: 16px;
+}
+
 .copyright {
     --tw-text-opacity: 1;
     color: rgba(203,213,224,var(--tw-text-opacity));
